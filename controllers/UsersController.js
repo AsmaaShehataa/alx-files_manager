@@ -16,7 +16,7 @@ class UsersController {
     }
     const hashedPassword = sha1(password);
     const nuser = {
-      email,
+      email: email,
       password: hashedPassword,
     };
     try {
